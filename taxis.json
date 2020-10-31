@@ -1,0 +1,53 @@
+{
+  "taxis" :
+  [
+    {
+      "id" : "ID1",
+      "location" : {
+        "x" : 10,
+        "y" : 15
+      },
+      "isReady" : "true"
+    },
+    {
+      "id" : "ID2",
+      "location" : {
+        "x" : -10,
+        "y" : -5
+      },
+      "isReady" : "true"
+    },
+    {
+      "id" : "ID3",
+      "location" : {
+        "x" : 35,
+        "y" : 80
+      },
+      "isReady" : "true"
+    },
+    {
+      "id" : "ID4",
+      "location" : {
+        "x" : -35,
+        "y" : -15
+      },
+      "isReady" : "true"
+    },
+    {
+      "id" : "ID5",
+      "location" : {
+        "x" : 35,
+        "y" : -15
+      },
+      "isReady" : "true"
+    },
+    {
+      "id" : "ID6",
+      "location" : {
+        "x" : -35,
+        "y" : 15
+      },
+      "isReady" : "true"
+    }
+  ]
+}
