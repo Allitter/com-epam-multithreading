@@ -12,8 +12,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Main {
-    public static final String TAXIS_JSON = "taxis.json";
-    public static final String CLIENTS_JSON = "clients.json";
+    public static final String TAXIS_JSON = "data/taxis.json";
+    public static final String CLIENTS_JSON = "data/clients.json";
 
     public static void main(String[] args) throws DataException {
         Reader reader = new FileReader();
