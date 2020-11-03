@@ -9,9 +9,6 @@ public class Calculator {
         double y1 = firstPoint.getY();
         double y2 = secondPoint.getY();
 
-        double firstDistance = Math.hypot(x1, y1);
-        double secondDistance = Math.hypot(x2, y2);
-
-        return Math.abs(firstDistance - secondDistance);
+        return Math.sqrt((x1 - x2) * (x1 - x2)  + (y1 - y2) * (y1 - y2));
     }
 }

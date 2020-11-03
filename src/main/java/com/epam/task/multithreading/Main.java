@@ -12,13 +12,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Main {
+    public static final String TAXIS_JSON = "taxis.json";
+    public static final String CLIENTS_JSON = "clients.json";
+
     public static void main(String[] args) throws DataException {
         Reader reader = new FileReader();
-        String taxisJson = reader.read("taxis.json");
+        String taxisJson = reader.read(TAXIS_JSON);
         Taxis taxis = new TaxisParser().parse(taxisJson);
         Uber uber = Uber.getInstance();
         uber.addTaxis(taxis);
-        String taxiClientJson = reader.read("clients.json");
+        String taxiClientJson = reader.read(CLIENTS_JSON);
         TaxiClients taxiClients = new TaxiClientParser().parse(taxiClientJson);
 
         ExecutorService executorService = Executors.newCachedThreadPool();
